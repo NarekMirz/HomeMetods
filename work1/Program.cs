@@ -32,24 +32,52 @@ int result = des;
 return result;
 }
 int res = threeNumber();
-Console.WriteLine("Вторая цифра этого числа " +res); */
-
-
-
-
-Console.Write("Введи число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int yourNumber()
-{
-int sot = number / 100;    
-int des = number / 10 % 10;
-int ed = number % 10;
-
-int result = des;
-return result;
-}
-int res = yourNumber();
 Console.WriteLine("Вторая цифра этого числа " +res); 
+
+
+Console.WriteLine("Введите число");
+int x = Convert.ToInt32(Console.ReadLine());
+
+void ThreeDigit(int number)
+{
+    int lenght = number.ToString().Length;
+    if (lenght < 3 )
+    {
+      Console.WriteLine("Третьего числа не существует");
+    }
+    else if(lenght == 3)
+    {
+      int num = number % 10;
+      Console.WriteLine(num);
+    }
+    else if (lenght > 3)
+    {
+      int des = lenght - 3;
+      var result = number / Math.Pow(10,des);
+      int LastResult = (int)result % 10;
+      Console.WriteLine(LastResult);
+    }
+}
+ThreeDigit(x);*/
+
+
+
+void FindSum()
+{
+    Console.Write("Напишите число ");
+    int a = Convert.ToInt32(Console.ReadLine());
+    
+    int current = 1, sum = 0;
+    while (current <= a)
+    {
+        sum= sum + current;
+        current++;
+    }
+    Console.WriteLine(sum);
+
+}
+FindSum();
+
 
 
 
