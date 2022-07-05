@@ -32,7 +32,7 @@ int result = des;
 return result;
 }
 int res = threeNumber();
-Console.WriteLine("Вторая цифра этого числа " +res); 
+Console.WriteLine("Вторая цифра этого числа " +res); */
 
 
 Console.WriteLine("Введите число");
@@ -58,27 +58,7 @@ void ThreeDigit(int number)
       Console.WriteLine(LastResult);
     }
 }
-ThreeDigit(x);*/
-
-
-
-void FindSum()
-{
-    Console.Write("Напишите число ");
-    int a = Convert.ToInt32(Console.ReadLine());
-    
-    int current = 1, sum = 0;
-    while (current <= a)
-    {
-        sum= sum + current;
-        current++;
-    }
-    Console.WriteLine(sum);
-
-}
-FindSum();
-
-
+ThreeDigit(x);
 
 
 
